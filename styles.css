@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    background: linear-gradient(135deg, #ffffff 0%, #ffb3d9 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    background: white;
+    padding: 60px 40px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+h1 {
+    color: #e74c3c;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    animation: pulse 2s ease-in-out infinite;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+.question {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    height: 80px;
+}
+
+#yesBtn {
+    background: #48c9b0;
+    color: white;
+}
+
+#noBtn {
+    background: #d40000;
+    color: white;
+    height: 54px;
+    white-space: nowrap;
+}
+
+button {
+    padding: 15px 40px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#yesBtn:hover {
+    background: #3ba993;
+    transform: scale(1.1);
+}
+
+#noBtn:hover {
+    background: #8f0000;
+}
+
+.success {
+    display: none;
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.celebration {
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+#reactionImage {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+.success-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px; 
+    margin: 20px 0;
+}
+
+.success-images img {
+    width: 175px;
+    height: 175px;
+    object-fit: contain;
+    border-radius: 10px;
+}
