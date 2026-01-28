@@ -3,9 +3,9 @@ const noBtn = document.getElementById('noBtn');
 const questionSection = document.getElementById('questionSection');
 const successSection = document.getElementById('successSection');
 const reactionImage = document.getElementById('reactionImage'); 
-const happyImage1 = document.getElementById('happyImage1'); 
 const happyImage2 = document.getElementById('happyImage2'); 
 const happyImage3 = document.getElementById('happyImage3');
+const happyImage1 = document.getElementById('happyImage1'); 
 
 let noBtnSize = 100;
 const shrinkAmount = 10;
@@ -64,11 +64,13 @@ noBtn.addEventListener('click', function() {
 yesBtn.addEventListener('click', function() {
     questionSection.style.display = 'none';
     successSection.style.display = 'block';
-    happyImage1.src = 'images/pikachu-and-togepi-happy.gif'
     happyImage2.src = 'images/dedenne-happy.gif'
     happyImage3.src = 'images/frieren-kiss.gif'
+    happyImage1.src = 'images/bears.gif'
 
-    const container = document.querySelector('.container');
-    container.style.maxWidth = '700px'; 
-    container.style.transition = 'max-width 0.5s ease'; 
+    confetti({
+        particleCount: 100,
+        spread: 100,
+        origin: { y: 0.6 }
+    });
 });

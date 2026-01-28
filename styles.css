@@ -21,6 +21,7 @@ body {
     max-width: 500px;
     width: 100%;
     position: relative;
+    min-height: 600px;
 }
 
 h1 {
@@ -109,13 +110,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px; 
-    margin: 20px 0;
+    gap: 15px; 
+    margin: 10px 0;
 }
 
 .success-images img {
-    width: 175px;
-    height: 175px;
+    width: 200px;
+    height: 200px;
     object-fit: contain;
     border-radius: 10px;
 }
