@@ -112,6 +112,7 @@ button {
     align-items: center;
     gap: 15px; 
     margin: 10px 0;
+    flex-direction: column;
 }
 
 .success-images img {
@@ -119,4 +120,16 @@ button {
     height: 200px;
     object-fit: contain;
     border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .success-images {
+        flex-direction: row; 
+        gap: 30px;
+    }
+    
+    .success-images img {
+        width: 180px; 
+        height: 180px;
+    }
 }
