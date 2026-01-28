@@ -69,6 +69,6 @@ yesBtn.addEventListener('click', function() {
     happyImage3.src = 'images/frieren-kiss.gif'
 
     const container = document.querySelector('.container');
-    container.style.maxWidth = '700px'; // Increase from 500px
-    container.style.transition = 'max-width 0.5s ease'; // Smooth animation
+    container.style.maxWidth = '700px'; 
+    container.style.transition = 'max-width 0.5s ease'; 
 });
